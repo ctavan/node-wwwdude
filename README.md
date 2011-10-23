@@ -138,7 +138,9 @@ Creates a HTTP HEAD request
 ### requestOptions hash
 
 * _headers_ see customHeaders
-* _payload_ content to transmit with PUT or POST request
+* _payload_ content (querystring-formatted) to transmit with PUT or POST request
+* _data_ content (JSON object) to transmit with PUT or POST request. If _payload_ and _data_ are both specified, _payload_ takes precedence and _data_ is ignored.
+* _query_ query string paramters to be provided as a JSON object
 
 ### customHeaders hash
 
